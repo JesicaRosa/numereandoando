@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Guía didáctica | matemáTIClab </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jesica Rosa Delgado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+    .lf {
+        font-size: 14pt;
+        line-height:1.5em;
+    }
+    
+    .diccionario dt {
+        font-weight: bold;
+    }
+    
+    .diccionario dl {
+        overflow: hidden;
+    }
+    
+    div.diccionario figure {
+        max-width: 100px;
+        max-height: 100px;
+        float: left;
+        margin: 0px 10px 10px 0px;
+    } 
+    div.exe-tooltip-text figure, 
+    div.exe-tooltip-text img {
+        max-width: 100px;
+        max-height: 100px;
+        float: left;
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .pasos img {
+        max-width: 125px;
+        max-height: 125px;
+        margin-right: 10px;        
+    }
+    
+    .floatLeft {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        float: left;
+    }    
+
+    video, audio {
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .udl-btn {
+        border-radius: 5px;
+    }
+    article.iDevice_wrapper > p.toggle-idevice {
+        display: none;
+    }
+
+    div.exe-udlContent-content-block ul {
+        overflow: hidden;
+    }
+    div.exe-udlContent-content-block ol {
+        overflow: hidden;
+    }
+    article.exe-udlContent-content-simplified p {
+        margin-bottom: 1em;
+        line-height: 2em;
+        font-size: 1.111em;
+    }
+    article.exe-udlContent-content-simplified span {
+        margin-bottom: 1em;
+        line-height: 2em;
+        font-size: 1.111em;
+    }
+    article.exe-udlContent-content-simplified li {
+        margin-bottom: 1em;
+        line-height: 2em;
+        font-size: 1.111em;
+    }
+    article.exe-udlContent-content-simplified img {
+        margin: 10px;
+    }
+    .definition-tt {
+        font-weight: bold;
+    }
+    .dImgTxtCen {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+    }
+    .imgTxtCen {
+        flex-shrink: 0;
+    }
+    .iDeviceTitle {
+        top: auto;
+    }
+    img[style *= "float: left"]{
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    img[style *= "float:left"]{
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    img[style *= "float: right"]{
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    img[style *= "float:right"]{
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    div.tabla-centro {
+        overflow-x: auto;
+        justify-content: center;
+    }
+    div.tabla {
+        display: table;
+        margin: 0 auto;
+        padding: 0;
+        table-layout: fixed;
+        align-self: center;
+    }
+    div.tabla-fila {
+        display: table-row;
+        margin: 0;
+        padding: 0;
+    }
+    div.tabla-celda {
+        display: table-cell;
+        margin: 0;
+        padding: 1px;
+        border: 1px solid #000;
+        text-align: center;
+        vertical-align: middle;
+    }
+    div.tabla-celdaSinBorde {
+        display: table-cell;
+        margin: 0;
+        padding: 3px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    div.superindice {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        text-align: center;
+    }
+    
+    .creditos {
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;  
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .break {
+        flex-basis: 100%;
+        height: 0;
+        margin: 0px;        
+    }
+    
+    div.creditos figure {
+        margin: 20px;
+        text-align: center;
+    }
+    div.creditos img {
+        max-width: 200px !important;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: white;
+    }
+    div.creditos figcaption {
+        max-width: 200px;
+        text-align: left;
+        margin: 0 auto;
+        white-space: pre-line;
+        word-wrap: break-word;
+    }
+    div.creditosUrl {
+        border: 2px solid black;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        max-width: 200px;
+        padding: 8px;
+    }
+    img.diccionario {
+        box-sizing: content-box;
+        border: 1px solid #cc6715;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: white;
+    }
+    img.bocadillo {
+        box-sizing: content-box;
+        border: 1px solid #f1d031;
+        border-radius: 5px;
+        background-color: white;
+    }
+    img.contenido {
+        box-sizing: content-box;
+        border-radius: 5px;
+    }
+    div.inputResponsive input {
+        width: 65%  !important;
+    }
+    div.creditos audio {
+        max-width: 200px;
+    }
+    div.creditos video {
+        max-width: 200px;
+    }
+
+</style></head>
+<body class="exe-web-site" id="exe-node-68"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">matemáTIClab</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Numereando ando</a></li>
+   <li><a href="hola.html" class="no-ch">¡Hola!</a></li>
+   <li><a href="el_nmero_1.html" class="no-ch">El número 1</a></li>
+   <li><a href="el_nmero_2.html" class="no-ch">El número 2</a></li>
+   <li><a href="el_nmero_3.html" class="no-ch">El número 3</a></li>
+   <li><a href="el_nmero_4.html" class="no-ch">El número 4</a></li>
+   <li><a href="el_nmero_5.html" class="no-ch">El número 5</a></li>
+   <li><a href="el_nmero_6.html" class="no-ch">El número 6</a></li>
+   <li><a href="el_nmero_7.html" class="no-ch">El número 7</a></li>
+   <li><a href="el_nmero_8.html" class="no-ch">El número 8</a></li>
+   <li><a href="el_nmero_9.html" class="no-ch">El número 9</a></li>
+   <li><a href="el_nmero_10.html" class="no-ch">El número 10</a></li>
+   <li id="active"><a href="gua_didctica.html" class="active no-ch">Guía didáctica</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="el_nmero_10.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>13</strong> de <strong>14</strong></span> <span class="sep">| </span><a href="crditos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Guía didáctica</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_culturales" id="id938">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_culturales.svg)"><h1 class="iDeviceTitle">Situación de aprendizaje</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta938_887_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><h1 style="text-align: center;">matemaTIClab: numereando ando</h1>
+<p style="text-align: center;"><span style="font-size: 18pt;">Recursos para aprender a contar hasta el 10</span></p>
+<p style="text-align: center;"><span style="font-size: 18pt;"><img src="Tron.png" alt="Icono Tron" title="Icono Tron" width="200" height="201"></span></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Temática</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>“matemáTIClab: numereando ando” es un proyecto de creación de materiales del ámbito de las matemáticas, concretamente del bloque de conteo y numeración, que ayuda al alumnado a aprender a contar de una manera ajustada a sus intereses y necesidades y acorde a los principios de accesibilidad y del diseño universal para el aprendizaje (DUA).</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Nivel al que se dirige</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los materiales van destinados al alumnado escolarizado en modalidad C en aulas específicas de educación especial en centros ordinarios que cursan el primer ciclo de la Formación Básica Obligatoria (FBO) y/o a aquel que se encuentre en una primera fase de aproximación a la adquisición de estrategias de conteo y numeración en la etapa de Educación Infantil o Primaria.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Descripción de los materiales</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Consta de una colección de recursos digitales y análogicos para desarrollar actividades de conteo (del 0 al 10) en el aula encaminadas a comprender los números, las formas de representarlos, las relaciones entre ellos y los conjuntos numéricos.</p>
+<p>La característica más reseñable del material a diseñar es que en su diseño se ha pensado principalmente en atender a la diversidad, siendo algunos de los requisitos técnicos más destacables los siguientes:</p>
+<ul>
+<li>Permite una personalización de la enseñanza del número y la cantidad adaptable a los intereses del alumnado y ajustado a la fase de conteo en la que se encuentre.</li>
+</ul>
+<ul>
+<li>Al ser una recurso educativo abierto permite la modificación por parte del profesorado a partir de una plantilla base y una configuración instantánea en el momento de uso que ofrezca la posibilidad de personalizar la experiencia del usuario.</li>
+</ul>
+<ul>
+<li>Puede complementarse con actividades que favorecen oportunidades para la retroalimentación y el aprendizaje autónomo.</li>
+<li>
+<p>Ofrece la posibilidad de ir escalando en complejidad de acuerdo a las fases de adquisición del conteo y la numeración propuesto por las últimas investigaciones en didáctica de las matemáticas.</p>
+</li>
+<li>
+<p>Es acorde a los principios del DUA y permita ofrecer la información y expresarla en diferentes soportes (digital, analógico, escrito), así como ofrecer opciones para la elección del alumnado.</p>
+</li>
+<li>
+<p>Además está basado en una presentación de alto contraste y usando elementos pictográficos de uso extendido entre la comunidad usuaria de sistemas alternativos y aumentativos de comunicación (SAAC).</p>
+</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Fundamentación pedagógica del proyecto</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los estudios más recientes en el ámbito del conteo de la didáctica de las matemáticas ponen de manifiesto que el alumnado de entre 2 y 7 años aprende los conceptos de cardinalidad, conteo y correspondencia 1 a 1 de forma progresiva, de ahí que el material a elaborar sea secuenciado en fases (Alsina, 2016).</p>
+<p>Gran parte de estos conocimientos requieren conocimientos culturales específicos (como por ejemplo de idioma) y por esta razón el material es totalmente adaptable y puede ser modificado por ser un recurso educativo abierto.</p>
+<p>Además, la&nbsp; importancia de la adquisición de habilidades de conteo reside fundamentalmente en que es necesario que este sea fluido para que pueda convertirse en una herramienta de representación mental y favorezca el aprendizaje algebraico en etapas posteriores. Para alcanzar esta fluidez se necesita que se realicen múltiples experiencias: primero con números pequeños y progresivamente cada vez mayores. De aquí que los materiales que se presentan sean diversos y en variados soportes.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Tipos de soporte</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los materiales han sido creados para su publicación y uso en diferentes soportes que permiten usarlo de manera digital con ordenador, tablet o pantalla; con y sin conexión a Internet; de manera impresa como cuadernillo de trabajo, y de manera manipulativa mediante juegos de piezas o robótica.</p>
+<p>Todos estos archivos diseñados ha sido recogidos como un recurso educativo abierto en este REA como un archivo con extensión .elp creado con eXelearning que contiene el material audiovisual, el material interactivo y los documentos de texto en formato .pdf.</p>
+<p>Tanto el material diseñado como los recursos utilizados para su creación son aptos para su publicación y reutilización al ser de elaboración propia y disponer de Licencia Creative Commons (BY NC SA).</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Conexión curricular</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><ul>
+<li><strong>Materia:&nbsp;</strong>Según la Orden de 19 de septiembre de 2002, por la que se regula entre otros aspectos las programaciones de las aulas de educación especial en centros ordinarios, dicha programación se hará adaptando el proyecto curricular de las etapas de Infantil y Primaria en torno a tres ámbitos de experiencia y desarrollo: Conocimiento corporal y construcción de la identidad; conocimiento y participación en el medios físico y social, y comunicación y lenguaje. Los conocimientos matemáticos se trabajan desde los tres ámbitos, teniendo una mayor presencia en el currículo del nuevo ámbito de Educación Infantil denominado Descubrimiento y exploración del entorno, que toma como referente curricular.</li>
+</ul>
+<ul>
+<li><strong>Competencia específica 1</strong>: Desarrollo de destrezas que ayudan a identificar y establecer relaciones lógicas entre los distintos elementos que forman el entorno. Desarrollo de destrezas lógico-matemáticas para descubrir y crear una idea cada vez más compleja del mundo.</li>
+</ul>
+<ul>
+<li><strong>Criterio de evaluación 1.2:</strong> Emplear los cuantificadores básicos más significativos en el contexto del juego y en la interacción con los demás.</li>
+</ul>
+<ul>
+<li><strong>Saberes básicos:</strong> Cuantificadores básicos contextualizados y funcionalidad de los números en la vida cotidiana.</li>
+</ul>
+<ul>
+<li><strong>Objetivos específicos:</strong>
+<ul>
+<li>Contar con comprensión y darse cuenta de “cuántos hay” en colecciones de objetos hasta 10.</li>
+<li>Relacionar los nombres de los números y los numerales con las cantidades que representan.</li>
+<li>Identificar si el número de objetos de una colección es menor, igual o mayor que el número de objetos de otra colección.</li>
+<li>Comparar dos números entre el 1 y el 10 presentados como numerales escritos.</li>
+</ul>
+</li>
+</ul></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Secuencia didáctica</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>1. Conocer los números y su secuencia.</p>
+<p>a. Contar hasta 10 en unidades.</p>
+<p>b. Contar hacia adelante a partir de cualquier número de la secuencia.</p>
+<p>c. Escribir los números del 0 al 10 con un numeral escrito.</p>
+<p>2. Contar para saber el número de objetos.</p>
+<p>a. Entender la relación entre números y cantidades y contar con los números cardinales.</p>
+<p>b. Entender que el último número que se ha dicho nos indica el número de objetos que se han contado.</p>
+<p>c. Entender&nbsp; que&nbsp; cada&nbsp; número&nbsp; sucesivo&nbsp; hace&nbsp; referencia&nbsp; a&nbsp; una cantidad cada vez mayor.</p>
+<p>3. Entender la suma como el hecho de juntar y añadir.</p>
+<p>a. Representar&nbsp; la&nbsp; suma con&nbsp; objetos,&nbsp; dedos,&nbsp; imágenes mentales,&nbsp; dibujos,&nbsp; sonidos&nbsp; y representar situaciones, enunciados, expresiones u operaciones escritas.</p>
+<p>b. Resolver enunciados de sumas con un resultado igual o inferior a 10.</p>
+<p>c. Asociar números menores o iguales a 10 de varias maneras.</p>
+<p>d. Encontrar el número entre el 1 y el 9 que sumado a otro número dé 10.</p>
+<p>e. Hacer sumas con fluidez con un resultado igual o inferior a 5.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Orientaciones metodológicas</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los objetivos que se pretenden conseguir con este material pueden alcanzarse usando un material basado en objetos o dibujos que se puedan reconocer, agrupar y de los que se puedan relacionar sus cantidades. Por tanto, no solo nos basaremos en la notación convencional, sino en otras representaciones como pueden ser orales, concretas-manipulativas, pictóricas y simbólicas.</p>
+<p>Además, aprender a contar identificando el cardinal de un conjunto de objetos implica usar una secuencia didáctica en la adquisición paulatina de estos saberes porque reconocer la cantidad de objetos de una colección (el cardinal) requiere:</p>
+<p>1º conocer&nbsp; el&nbsp; nombre de los números (es decir, su representación verbal) y usar estos nombres en un orden correcto, de acuerdo con la serie numérica.</p>
+<p>2º Saber contar el número de objetos que hay en un grupo sabiendo que</p>
+<p>- Se debe asignar a cada objeto un único número de la serie numérica.</p>
+<p>- Que el cardinal del conjunto no depende de criterios de tipo perceptivo como por ejemplo el volumen o la longitud de los objetos.</p>
+<p>- Que es necesario realizar un seguimiento de los objetos que ya se han contado para no contarlo más de una vez o no contarlo.</p>
+<p>- Tener noción de inclusión para reconocer que el último nombre del conteo sirve para designar el conjunto&nbsp; de objetos de la colección.</p>
+<p>- Y que, independientemente del orden en el que se cuenten los objetos, el total sigue siendo el mismo.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Aspectos innovadores de este material</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>La principal novedad con respecto a otros recursos que ya existen es que se ofrece en diversos soportes: como recurso educativo abierto creado con eXeLearning (digital), como recurso impreso (cuadernillo) o como juegos manipulativos y de robótica. Esto nos permite ajustarnos a las diferentes formas de expresión de la información y de implicación o motivación del alumnado. Y es que, según Alsina (2016) en su artículo “El currículo del número en educación infantil”, la principal problemática que presentan los recursos actuales para la adquisición de habilidades de conteo es que dichas actividades no tienen un sentido (un&nbsp; porqué)&nbsp; claro&nbsp; para&nbsp; los&nbsp; alumnos,&nbsp; no&nbsp; suelen&nbsp; estar&nbsp; basadas en sus intereses, no suponen una actividad genuinamente matemática, y no resultan significativas”. Dado que el material es modificable, escalado en complejidad y permite al alumnado elegir, permitirá ajustarlo a las necesidades del grupo, personalizar la enseñanza y así hacer frente a la problemática reseñada por este autor.</p>
+<p>Otra de las novedades que presenta el material es que se ajusta al modelo pedagógico experiencial propuesto en el Proyecto REA/DUA Andalucía de la Consejería de Desarrollo Educativo y Formación Profesional y al modelo 5E que promueve el aprendizaje colaborativo y activo y que favorece el uso de metodologías activas, ya que seguirá la siguiente secuencia didáctica que consta de 6 fases: movilizar, activar, explorar, estructurar, aplicar y comprobar.</p>
+<p>Esto permite a su vez (usando el mismo estilo en eXeLearning y la guía técnica del proyecto) incorporar dicho recurso a la colección de REAs que componen este proyecto tan innovador pero esta vez aportando una situación de aprendizaje para las enseñanzas de FBO e Infantil, las cuales no han sido desarrolladas en él.</p>
+<p>Por otro lado, el material propuesto ha sido validado por un grupo de usuarios de aula específica con edades comprendidas entre los 4 y los 10 años y que se encuentran en periodo de adquisición de nociones básicas de conteo.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="el_nmero_10.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>13</strong> de <strong>14</strong></span> <span class="sep">| </span><a href="crditos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_escolares_js.js"></script></body></html>
